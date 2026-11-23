@@ -7,14 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [Unreleased]
+## [0.2.0] - 2026-11-23
 
-### Planned
-- **Web Interface:** Interactive React + Vite + TypeScript dashboard deployed to GitHub Pages.
-- **Web Worker Engine:** Ported PFSP algorithms (Random Search, Local Search, Simulated Annealing, Genetic Algorithm) with real-time streaming.
-- **Visualizations:** Interactive Gantt chart (SVG-based) and live convergence curve (Recharts).
-- **Benchmark Suite:** Multi-algorithm tournament comparator mode.
-- **CI/CD:** Automated GitHub Actions workflow to build and deploy to GitHub Pages.
+### Added
+- **Modern Web Dashboard:** Full React 19 + Vite 6 + TypeScript + Tailwind CSS 4 web application.
+- **Web Worker Engine:** Background optimization worker (`web/src/core/worker.ts`) with throttled progress streaming (~30fps) for non-blocking execution.
+- **Interactive SVG Gantt Chart:**
+  - Machine timeline with machine utilization rate metrics.
+  - Golden-angle HSL deterministic color palette per job.
+  - Hover tooltips showing Job ID, Machine ID, start/end times, durations, and idle gaps.
+  - Zoom controls (30% to 600%) and horizontal scroll for large datasets.
+  - Job isolation mode (highlighting a single job across all machines).
+- **Real-time Convergence Charts:** Live Makespan vs Iteration/Generation line charts powered by Recharts.
+- **Tournament Mode:** Multi-algorithm benchmark runner comparing Random Search, Local Search (Best/First), Simulated Annealing, and Genetic Algorithm side-by-side.
+- **Dataset Manager:**
+  - Preloaded benchmarks (`datos_5_2.txt`, `ta001_20_5.txt`, `instancia_200_20.txt`).
+  - Drag-and-drop custom `.txt` file uploader.
+  - In-browser synthetic instance generator.
+- **CI/CD:** Automated GitHub Actions workflow (`.github/workflows/deploy.yml`) deploying to GitHub Pages on push to `main`.
+- **Engineering Guidelines & Skills:**
+  - `AGENTS.md` specifying repository architecture, design aesthetic, and coding rules.
+  - `MEMORY.md` documenting mathematical formulation and metaheuristic inventory.
+  - Custom skills: `flow-shop-solver` and `web-worker-runner`.
+
+### Changed
+- Reorganized C++ native engine into `cpp/` folder with `Makefile`, `src/`, `data/`, and dedicated `README.md`.
+- Converted repository into a decoupled hybrid architecture (C++ CLI + Web App).
 
 ---
 
