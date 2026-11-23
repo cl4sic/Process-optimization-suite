@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Local tools
+.tools/
+
+# Production build
+dist/
+dist-ssr/
+*.local
+
+# C++ Build outputs
+cpp/bin/
+*.o
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
