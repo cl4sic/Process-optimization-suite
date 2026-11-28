@@ -12,11 +12,12 @@
 
 ---
 ## Use it online!
-<img width="1109" height="906" alt="image" src="https://github.com/user-attachments/assets/163338c7-9741-4746-900d-418f2d3d1a2f" />
-<img width="1185" height="727" alt="image" src="https://github.com/user-attachments/assets/723de038-7ad8-4823-8f07-7805d3383ac9" />
 
-### Github Pages Link 👇
-**https://cl4sic.github.io/Process-optimization-suite/**
+| Main View | Results & Analysis |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/163338c7-9741-4746-900d-418f2d3d1a2f" width="100%" alt="Main View" /> | <img src="https://github.com/user-attachments/assets/723de038-7ad8-4823-8f07-7805d3383ac9" width="100%" alt="Results and Analysis" /> |
+
+> 🚀 **Try the live demo here:** [cl4sic.github.io/Process-optimization-suite](https://cl4sic.github.io/Process-optimization-suite/)
 
 ## Problem Overview
 
