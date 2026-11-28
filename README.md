@@ -1,4 +1,4 @@
-# ⚡ Process Optimization Suite (PFSP)
+# Process Optimization Suite (PFSP)
 
 > Modern, high-performance optimization suite for the **Permutation Flow Shop Scheduling Problem (PFSP)**. Built with a native **C++17** core and an interactive **React + TypeScript** web dashboard running background **Web Workers** for real-time visualization without UI blocking.
 
@@ -12,7 +12,7 @@
 
 ---
 
-## 🎯 Problem Overview
+## Problem Overview
 
 The **Permutation Flow Shop Scheduling Problem (PFSP)** is a classic $\mathcal{NP}$-hard combinatorial optimization problem widely studied in industrial engineering and operations research:
 - **Given:** $n$ jobs must be processed through $m$ machines in the identical technological sequence ($M_0 \rightarrow M_1 \rightarrow \dots \rightarrow M_{m-1}$).
@@ -25,7 +25,7 @@ The **Permutation Flow Shop Scheduling Problem (PFSP)** is a classic $\mathcal{N
 
 ---
 
-## 🧠 Implemented Metaheuristics
+## Implemented Metaheuristics
 
 | Algorithm | Paradigm | Key Characteristics |
 | :--- | :--- | :--- |
@@ -37,9 +37,9 @@ The **Permutation Flow Shop Scheduling Problem (PFSP)** is a classic $\mathcal{N
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-### 🖥️ Interactive Web Dashboard
+### Interactive Web Dashboard
 - **100% Client-Side Web Worker:** Heavy optimization loops run in a separate background thread (`worker.ts`) with throttled progress streaming (~30fps) ensuring silky 60fps UI responsiveness.
 - **Dynamic SVG Gantt Chart:**
   - Machine rows with real-time utilization percentages.
@@ -54,13 +54,13 @@ The **Permutation Flow Shop Scheduling Problem (PFSP)** is a classic $\mathcal{N
   - Drag & Drop custom `.txt` files in standard Taillard / OR-Library format.
   - Synthetic instance generator with customizable job/machine dimensions and processing time intervals.
 
-### ⚡ Native C++ CLI Engine
+### Native C++ CLI Engine
 - Zero-dependency C++17 implementation for academic benchmarking or headless execution.
 - Optimized with `-O3` compilation flags via a standard `Makefile`.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 Process-optimization-suite/
@@ -133,7 +133,7 @@ make
 
 ---
 
-## 📊 Dataset Format
+## Dataset Format
 
 Instance files follow the standard **Taillard / OR-Library** format:
 ```text
@@ -154,6 +154,6 @@ Example (5 jobs, 2 machines):
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**.
